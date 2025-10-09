@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.toolzz.com.br)",
+      "Bash(npm run build:*)",
+      "Bash(npm run dev:*)",
+      "Bash(rd:*)",
+      "Bash(tasklist)",
+      "Bash(findstr:*)",
+      "Bash(npx next lint:*)",
+      "Bash(dir app)",
+      "Bash(dir:*)",
+      "Bash(tasklist:*)",
+      "Bash(powershell:*)",
+      "Bash(netstat:*)",
+      "Bash(del \"components\\ClinicFlowRevelation.tsx\")",
+      "Bash(npm run lint)",
+      "mcp__ide__getDiagnostics",
+      "Bash(for file in ClinicFlowFeatures.tsx ClinicFlowFinalCTA.tsx ClinicFlowHowItWorks.tsx ClinicFlowProblems.tsx ClinicFlowTestimonials.tsx)",
+      "Bash(do sed -i \"s|<div className=\"\"absolute inset-0 bg-\\[url(''/grid.svg'')\\] opacity-[0-9]*\"\" />|<div className=\"\"absolute inset-0\"\" style={{ backgroundImage: ''linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px)'', backgroundSize: ''50px 50px'', opacity: 0.05 }} />|g\" \"$file\")",
+      "Bash(done)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git config:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
