@@ -210,7 +210,7 @@ export async function runSmithAgent(input: SmithAgentInput): Promise<SmithAgentO
   }
 
   // Executa o agente
-  const result = await agent.invoke(initialState)
+  const result = await agent.invoke(initialState as any)
 
   // Extrai a última mensagem (resposta do Smith)
   const lastMessage = result.messages[result.messages.length - 1]
