@@ -169,8 +169,8 @@ export function createSmithAgent() {
   workflow.addNode("process_message", processMessage)
 
   // Define as edges
-  workflow.addEdge(START as any, "process_message")
-  workflow.addConditionalEdges("process_message", shouldContinue, {
+  workflow.addEdge(START as any, "process_message" as any)
+  workflow.addConditionalEdges("process_message" as any, shouldContinue, {
     continue: END as any,
   })
 
