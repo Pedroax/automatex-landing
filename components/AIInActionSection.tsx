@@ -79,7 +79,7 @@ export default function AIInActionSection() {
     }
   }
 
-  // Função para enviar mensagem para o webhook N8N
+  // Função para enviar mensagem para o agente Smith (LangGraph)
   const sendMessage = async (message: string) => {
     if (!message.trim()) return
 
@@ -113,9 +113,9 @@ export default function AIInActionSection() {
     console.log('Payload enviado:', payload)
 
     try {
-      console.log('Fazendo requisição para:', 'https://webhook.n8nautomatex.automatexia.com.br/webhook/iaaaa')
+      console.log('Fazendo requisição para Smith Agent:', '/api/smith-agent')
 
-      const response = await fetch('https://webhook.n8nautomatex.automatexia.com.br/webhook/iaaaa', {
+      const response = await fetch('/api/smith-agent', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
