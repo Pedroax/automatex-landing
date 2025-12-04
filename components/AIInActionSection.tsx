@@ -113,7 +113,9 @@ export default function AIInActionSection() {
     console.log('Payload enviado:', payload)
 
     try {
-      console.log('Fazendo requisição para Smith Agent:', '/api/smith-agent')
+      console.log('=== SMITH AGENT REQUEST ===')
+      console.log('Endpoint:', '/api/smith-agent')
+      console.log('Payload:', payload)
 
       const response = await fetch('/api/smith-agent', {
         method: 'POST',
